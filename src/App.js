@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Login from './components/Login';
 import Home from './components/Home';
 import AutenticatedRoute from './misc/AutenticatedRoute';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route exact path='/login'>
           <Login />
+        </Route>
+        <Route exact path='/register'>
+          <Register />
         </Route>
         <AutenticatedRoute exact path='/home'>
           <Home />

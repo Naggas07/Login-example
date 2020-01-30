@@ -14,7 +14,7 @@ class Login extends Component {
     }
 
     handleChange = (event) => {
-        const { name, value } = event.target
+        const { name, value} = event.target
     
         this.setState({
           data: {
@@ -84,7 +84,7 @@ class Login extends Component {
             Log in
           </button>
 
-          <Link to="/signup">Register</Link>
+          <Link to="/register">Register</Link>
         </form>
       </div>
          );
